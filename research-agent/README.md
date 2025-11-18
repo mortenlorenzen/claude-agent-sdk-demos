@@ -17,6 +17,40 @@ uv run research_agent/agent.py
 
 Then ask: "Research quantum computing developments in 2025"
 
+## Organizing Multiple Research Projects
+
+To keep different research topics organized, create a separate folder for each project:
+
+```bash
+# Create a folder for your research topic
+mkdir -p ~/research-projects/quantum-computing
+cd ~/research-projects/quantum-computing
+
+# Run the agent from that directory
+uv run /path/to/research-agent/research_agent/agent.py
+```
+
+This creates a clean folder structure for each topic:
+```
+research-projects/
+├── quantum-computing/
+│   ├── files/
+│   │   ├── research_notes/
+│   │   └── reports/
+│   └── logs/
+└── renewable-energy/
+    ├── files/
+    │   ├── research_notes/
+    │   └── reports/
+    └── logs/
+```
+
+**Benefits:**
+- Each research project is self-contained
+- Easy to find reports and notes by topic
+- Clean separation between different research areas
+- Logs organized by project
+
 ## How It Works
 
 1. **Lead agent** breaks your request into 2-4 subtopics
